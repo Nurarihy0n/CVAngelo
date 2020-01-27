@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('font/Roboto-Italic-webfont.eot');
+    src: url('font/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-Italic-webfont.woff2') format('woff2'),
+         url('font/Roboto-Italic-webfont.woff') format('woff'),
+         url('font/Roboto-Italic-webfont.ttf') format('truetype'),
+         url('font/Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('font/Roboto-Light-webfont.eot');
+    src: url('font/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-Light-webfont.woff2') format('woff2'),
+         url('font/Roboto-Light-webfont.woff') format('woff'),
+         url('font/Roboto-Light-webfont.ttf') format('truetype'),
+         url('font/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}@font-face {
+    font-family: 'robotobold';
+    src: url('font/Roboto-Bold-webfont.eot');
+    src: url('font/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-Bold-webfont.woff2') format('woff2'),
+         url('font/Roboto-Bold-webfont.woff') format('woff'),
+         url('font/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('font/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+    --theme-color: #9FA8DA;
+}
+/* decoration titre et texte 
+__________________________*/
+
+h1
+{
+    font-family: robotoitalic, sans-serif, arial;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+h2
+{
+    margin-top: 0;
+    font-size: 1.3em;
+}
+body
+{
+    font-family: robotolight, sans-serif, arial;
+    margin: 0;
+}
+#tlt
+{
+    color: #9FA8DA;
+}
+#deve
+{
+    text-decoration: underline #9FA8DA;
+}
+h3
+{
+    border-bottom: solid 1px #9FA8DA;
+    font-style: bold;
+    font-size: 1.6em;
+}
+
+/* alignage du block droite et gauche
+__________________________________ */
+
+#full_block
+{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1130px;
+    margin: auto;
+}
+#left_part
+{
+    background-color: #9FA8DA; 
+    width: 25%;
+    margin: 0px 30px 0px 0px;
+
+}
+#right_part
+{
+    width: 70%;
+}
+
+#right_part #left_part
+{
+    display: flex;
+    text-align: center;
+}
+/* alignement et couleur bande gauche
+_____________________________________ */
+h4
+{
+    text-align: center;
+    background-color: #37474F;
+    color: #9FA8DA;
+}
+#loisirs
+{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#propos
+{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 1px 30px 300px 30px;
+}
+#coord
+{
+    font-size: 0.9em;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#profil 
+{
+    text-align: center;
+    padding-top: 10px;
+}
+img
+{
+    border: 1px solid #37474F;
+    margin: 10px 0px 10px 0px;
+}
+/*Mise en page de la partie droite 
+________________________________*/
+h3
+{
+    padding-top: 40px;
+}
+#XP
+{
+    display: flex;
+}
+.job_name
+{
+    font-family: robotobold, sans-serif, arial;
+    font-size: 1.2em;
+}
+.exp_job
+{
+    padding-left: 30%;
+}
+.entreprise
+{
+    padding-left: 30%;
+}
+#diplome
+{
+    display: flex;
+}
+.job_degres
+{
+    font-family: robotobold, sans-serif, arial;
+    font-size: 1.1em;
+}
+.section_logo
+{
+    color: var(--theme-color);
+}
