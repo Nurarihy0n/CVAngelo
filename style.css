@@ -34,10 +34,6 @@
     font-style: normal;
 
 }
-body
-{
-    --theme-color: #9FA8DA;
-}
 /* decoration titre et texte 
 __________________________*/
 
@@ -55,6 +51,7 @@ h2
 body
 {
     font-family: robotolight, sans-serif, arial;
+    --theme-color: #9FA8DA;
     margin: 0;
 }
 #tlt
@@ -70,6 +67,20 @@ h3
     border-bottom: solid 1px #9FA8DA;
     font-style: bold;
     font-size: 1.6em;
+}
+.section_logo
+{
+    color: var(--theme-color);
+    margin-right: 10px;
+    min-width: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.section_logo .fa-circle
+{
+    font-size: 7px;
+    margin: auto;
 }
 
 /* alignage du block droite et gauche
@@ -106,11 +117,16 @@ h4
     text-align: center;
     background-color: #37474F;
     color: #9FA8DA;
+    font-size: 1.8em;
 }
 #loisirs
 {
     text-align: center;
     padding-bottom: 10px;
+}
+.loisir_logo
+{
+    color: #37474F;
 }
 #propos
 {
@@ -130,44 +146,109 @@ h4
     text-align: center;
     padding-top: 10px;
 }
-img
+#profil_pics
 {
-    border: 1px solid #37474F;
-    margin: 10px 0px 10px 0px;
+    background-image: url(IMG_profil.jpg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: solid 2px #37474F;
+    width: 135px;
+    height: 135px;
+    margin: 40px auto;
 }
-/*Mise en page de la partie droite 
-________________________________*/
+/*Mise en page de la partie droite
+_________________________________*/
 h3
 {
     padding-top: 40px;
-}
-#XP
-{
-    display: flex;
-}
-.job_name
-{
-    font-family: robotobold, sans-serif, arial;
-    font-size: 1.2em;
-}
-.exp_job
-{
-    padding-left: 30%;
-}
-.entreprise
-{
-    padding-left: 30%;
-}
-#diplome
-{
-    display: flex;
 }
 .job_degres
 {
     font-family: robotobold, sans-serif, arial;
     font-size: 1.1em;
 }
-.section_logo
+.job_name
 {
-    color: var(--theme-color);
+    font-family: robotobold, sans-serif, arial;
+    font-size: 1.2em;
+}
+.date_lieu
+{
+    display: flex;
+    flex-direction: column;
+}
+.block_exp
+{
+    display: flex;
+    flex-direction: row;
+}
+.exp_date
+{
+    min-width: 30%;
+}
+.name_reco
+{
+    font-family: robotobold, sans-serif, arial;
+}
+#list_recommendation
+{
+    display: flex;
+}
+.reco
+{
+    margin-right: 15%;
+}
+
+/* Media Queries max 1024px
+_________________________*/
+
+@media all and (max-width: 1024px)
+{
+    #full_block
+    {
+        display: flex;
+        flex-direction: column;
+        margin: auto 50px;
+    }
+    #right_part
+    {
+        min-width: 400px;
+    }
+    #left_part
+    {
+        min-width: 400px;
+    }
+    .block_exp
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .exp_date
+    {
+        font-family: robotoitalic, sans-serif, arial;
+        font-size: 0.9em;
+        text-align: right;
+    }
+    h3
+    {
+        text-align: center;
+    }
+    .section_logo
+    {
+        display: none;
+    }
+    #profil_pics
+    {
+        display: none;
+    }
+    #list_recommendation
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #propos
+    {
+        margin: auto 30px;
+        text-align: center;
+    }
 }
