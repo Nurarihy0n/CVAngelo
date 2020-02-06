@@ -2,6 +2,7 @@
 <html>
  <head>
 	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/421226e43c.js" crossorigin="anonymous"></script>
 	<title>CV Angelo</title>
@@ -9,62 +10,69 @@
 
 <body> 
    <div id="full_block">
-	<div id="right_part"> <!-- Partie droite de la page -->
+	<main id="right_part"> <!-- Partie droite de la page -->
+		<header>
 		<h1><span id="tlt">Giammaria</span> Angelo</h1>
 		<h2><span id="deve">Déve</span>loppeur web freelance</h2>
+		</header>
 
 <!-- Xp et formation-->
-    	<h3><span class="section_logo"><i class="fas fa-briefcase"></i></span> Experience Professionnelle</h3>
     	<section>
+			<header>
+				<h3><span class="section_logo"><i class="fas fa-briefcase"></i></span> Expérience Professionnelle</h3>
+			</header>
 			<div class="date_lieu">
-				<div class="block_exp">
+				<article class="block_exp">
 					<div class="section_logo"><i class="far fa-dot-circle"></i></div>
 					<div class="exp_date"><p>2019-2020<br />a distance</p></div>
 			        <div class="exp_job"><p><span class="job_name">Openclassrooms</span><br />Développeur Web</p>
-					<p>Apres un grand moment de réfléxion je décide de me reconvertir et d'entreprendre une formation tant que développeur web chez : <a href="https://openclassrooms.com">Openclassrooms</a></p></div>
-			    </div>
-			    <div class="block_exp">
+					<p>Après un grand moment de réfléxion je décide de me reconvertir et d'entreprendre une formation en tant que développeur web chez : <a href="https://openclassrooms.com">Openclassrooms</a></p></div>
+			    </article>
+			    <article class="block_exp">
 					<div class="section_logo"><i class="fas fa-circle"></i></div>
 				    <div class="exp_date"><p>2014-2015<br />Kyoto(Japon)</p></div>
 				    <div class="exp_job"><p><span class="job_name">Festivin</span><br />Barman</p>
-					<p>Etant en visa Working-Holiday au Japon pour une année, j'ai exercer le role de serveur et ensuite celui Barman dans le restaurant "Festivin" a Kyoto.</p></div>
-			    </div>	
-				<div class="block_exp">
+					<p>Etant en visa Working-Holiday au Japon pour une année, j'exercer le role de serveur suivee de Barman dans le restaurant "Festivin" à Kyoto.</p></div>
+			    </article>	
+				<article class="block_exp">
 					<div class="section_logo"><i class="fas fa-circle"></i></div>
 				    <div class="exp_date"><p>2011-2013<br />Munster</p></div>
 				    <div class="exp_job"><p><span class="job_name">GILG</span><br />Patissier</p>
-					<p>Pendant 1 an j'exerce sur plusieurs poste, que ce soit en chocolaterie, glacierie, viennoiserie et patisserie. Apres la premiere année je me vois attribuer le poste de responsable de la partie viennoiserie.</p></div>
-				</div>
-				<div class="block_exp">
+					<p>Pendant 1 an j'exerce sur plusieurs poste, que ce soit en chocolaterie, glacierie, viennoiserie et pâtisserie. Après la première année je me vois attribuer le poste de responsable de la partie viennoiserie.</p></div>
+				</article>
+				<article class="block_exp">
 					<div class="section_logo"><i class="fas fa-circle"></i></div>
 				    <div class="exp_date"><p>2007-2009<br />Colmar</p></div>
-				    <div class="exp_job"><p><span class="job_name">La Mésangere</span><br />Patissier</p>
-					<p>Sortie du college a l'age de 14 ans je commence mon apprentissage de patissier.</p></div>
-				</div>
+				    <div class="exp_job"><p><span class="job_name">La Mésangère</span><br />Pâtissier</p>
+					<p>Sortie du collège à l'âge de 14 ans je commence mon apprentissage de pâtissier.</p></div>
+				</article>
 			 </div>
 		</section>
 	
-
-	<h3><span class="section_logo"><i class="fas fa-graduation-cap"></i></span>Formation</h3>
 	<section>
+		<header>
+			<h3><span class="section_logo"><i class="fas fa-graduation-cap"></i></span>Formation</h3>
+		</header>
 		<div class="date_lieu">
-			<div class="block_exp">
+			<article class="block_exp">
 				<div class="section_logo"><i class="fas fa-circle"></i></div>
 				<div class="exp_date"><p>2009<br />Colmar</p></div>
 				<div class="exp_job"><p><span class=job_degres>CAP Patissier</span><br />
 				Obtention du certificat d'aptitude professionelle au CAF Marcel Rudloff.</p></div>
-			</div>
-			<div class="block_exp">
+			</article>
+			<article class="block_exp">
 				<div class="section_logo"><i class="fas fa-circle"></i></div>
 				<div class="exp_date"><p>2016<br />Paris</p></div>
 				<div class="exp_job"><p><span class="job_degres">Cake Design</span><br />
 				Formation de 1 mois en tant que Cake Designer.</p></div>
-			</div>
+			</article>
 		</div>
 	</section>
 
-	<h3><span class="section_logo"><i class="fas fa-pen-fancy"></i></span>Recommendation</h3>
 	<section>
+		<header>
+			<h3><span class="section_logo"><i class="fas fa-pen-fancy"></i></span>Recommendation</h3>
+		</header>
 		<div id="list_recommendation">
 		<div class="reco">
 			<p><span class="name_reco">Festivin</span><br />
@@ -81,10 +89,9 @@
 	    </div>
 	</section>
 
-	</div>
+	</main>
 
-<div id="left_part"> <!-- partie gauche de la page -->    
-    <section>
+<main id="left_part"> <!-- partie gauche de la page -->    
     	<aside>
 			<div id="profil_pics"></div>
 			<h4>Contact</h4>
@@ -101,19 +108,18 @@
 		       @user_name</p>
 		     </div>
 		 
-			<h4>A propos de moi</h4>
+			<h5>A propos de moi</h5>
 			<div id="propos">
-		    <p>Hello ! Je me présente, Angelo, 27 ans. J'ai commencer a travailler en tant que patissier a l'age de 14 ans. A mes 21ans j'ai decider de tenter l'experience et de partir a l'etranger. J'ai vecu pendant 1 an au Japon ou j'ai appris la langue. De retour en France je decide de changer de metier et me voila actuellement en formation en tant que developpeur web.</p>	</div>
+		    <p>Hello ! Je me présente, Angelo, 27 ans. J'ai commencer à travailler en tant que patissier à l'âge de 14 ans. A mes 21ans je décide de tenter l'éxperience vivre à l'étranger. Après 1 an passé au Japon ou j'y ai appris la langue, je reviens en France et décide de changer de métier ! Me voilà actuellement en formation en tant que développeur web.</p></div>
 
-			<h4>Loisirs</h4>
+			<h5>Loisirs</h5>
 			<div id="loisirs">
 		    <p><span class="loisir_logo"><i class="fas fa-gamepad fa-2x"></i></span>
 		    <span class="loisir_logo"><i class="fas fa-compass fa-2x"></i></span>
 		    <span class="loisir_logo"><i class="fas fa-film fa-2x"></i></span></p>
 		    </div>	   
 	    </aside>
-    </section>
-</div>	
+</main>	
 
 </body>
 </html>
