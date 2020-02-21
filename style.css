@@ -92,7 +92,6 @@ __________________________________ */
     flex-direction: row-reverse;
     max-width: 1130px;
     margin: auto;
-    position: relative;
 }
 #left_part
 {
@@ -197,7 +196,7 @@ h3
 /* Media Queries max 1024px
 _________________________*/
 
-@media all and (max-width: 1024px)
+@media all and (max-device-width: 480px)
 {
     #full_block
     {
