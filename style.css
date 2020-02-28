@@ -65,7 +65,7 @@ body
 h3
 {
     border-bottom: solid 1px #9FA8DA;
-    font-style: bold;
+    font-weight: bold;
     font-size: 1.6em;
 }
 .section_logo
@@ -195,7 +195,7 @@ h3
 /* Media Queries max 480px
 _________________________*/
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     #full_block
     {
@@ -229,11 +229,7 @@ _________________________*/
     {
         margin-top: 0;
     }
-    .section_logo
-    {
-        display: none;
-    }
-    #profil_pics
+    .section_logo, #profil_pics
     {
         display: none;
     }
